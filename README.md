@@ -16,6 +16,11 @@ documentation https://docs.gitlab.com/ce/user/project/pages/.
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+## To do
+
+- J hat logo in ascii art
+- elm games
+
 ## GitLab CI
 
 This project's static Pages are built by [GitLab CI][ci], following the steps
