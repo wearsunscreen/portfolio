@@ -10,12 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cutive Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Courier Prime&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nova Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nanum Gothic Coding&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nova Mono&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: black;
@@ -24,9 +23,10 @@
             border-bottom: 20px solid transparent;
             /* height: 100vh; */
             color: #11e411;
-            font-family: 'Ubuntu Mono', monospace;
-            /* font-family: 'Courier Prime', monospace; */
-            font-size: 20px;
+            /* font-family: 'Fira Mono', monospace; */
+            /* font-family: 'VT323', monospace; */
+            font-family: 'Courier Prime', monospace;
+            font-size: 18px;
             padding: 20px;
             text-shadow: 0 0 4px #C8C8C8;
             /* box-shadow: 0 0 5px #C8C8C8; */
@@ -38,15 +38,9 @@
 
             .bbox {
                 border: 1px dashed #11ee11;
-                font-family: 'Source Code Pro', monospace;
-                /* font-family: 'Inconsolata', monospace; */
-                /* font-family: 'Fira Mono', monospace; */
-                /* font-family: 'Nova Mono', monospace; */
-                /* font-family: 'Cutive Mono', monospace; */
-                /* font-family: 'Space Mono', monospace; */
+                font-family: 'VT323', monospace;
                 /* font-family: 'Nanum Gothic Coding', monospace; */
-                /* font-family: 'VT323', monospace; */
-                font-size: 14px;
+                font-size: 18px;
                 padding: 10px;
                 margin-bottom: 20px;
                 box-shadow: 0 0 3px #C8C8C8;
@@ -64,9 +58,8 @@
 
             td {
                 padding-left: 20px;
-                /* Adjust the value as needed */
                 padding-right: 20px;
-                /* Adjust the value as needed */
+                max-width: 800px;
             }
         }
 
@@ -105,42 +98,53 @@
         </p>
     </div>
     <h1>My current project is Viple.</h1>
-    <div class="bbox">
-        <p>
-            Learn vi by playing classic games.
-        </p>
-        <p>
-            <a href="./viple/viple_wasm.html">Play Here!</a>
-        </p>
-        <p>
-            Motivation: While some devs choose to learn vi (I'm not judging) I recently discovered that some students
-            are forced to learn vi. There are a few games available to help you learn some features of vi,
-            there's a need to teach more.
-        </p>
-        <p>
-            Technology: I wanted to learn <a href="https:\\go.dev" and I was not disappointed. Go is designed with the
-                developer experience in mind. It&apos;s simple, powerful, concise, and well designed. I&apos;m using 
-                <a href="https://ebitengine.org/">Ebitengine</a>
-            as the game dev framework with <a href="https://ebitenui.github.io/">Ebiten UI</a>
-        <p>
-            Checkout the code at
-            <a href="https://gitlab.com/johncrane/viple">https://gitlab.com/johncrane/viple</a>
-        </p>
-        <p>
-            Gopher contributions welcome!
-        </p>
-        <ul>
-            Levels so far:
-            <li>Flappy bird - J, K - move up and down</li>
-            <li>Brickout - H, L - move left and right</li>
-            <li>Four edge Brickout - H, J, K, L</li>
-            <li>Connect 3 - Delete lines</li>
-            <li>Connect 3 - Visual Mode</li>
-            <li>Connect 3 - Challenge level, use all skills</li>
-        </ul>
-        In progress:
-        Snake - HJKL (replace Four Edge Brickout)
-        </p>
+    <table>
+        <tr>
+            <td></td>
+            <td>
+                <div class="bbox">
+
+                    <p>
+                        Learn vi by playing classic games.
+                    </p>
+                    <p>
+                        <a href="./viple/viple_wasm.html">Play Here!</a>
+                    </p>
+                    <p>
+                        Motivation: While some devs choose to learn vi (I'm not judging) I recently discovered that some
+                        students
+                        are forced to learn vi. There are a few games available to help you learn some features of vi,
+                        there's a need to teach more.
+                    </p>
+                    <p>
+                        Technology: I wanted to learn <a href="https:\\go.dev" and I was not disappointed. Go is
+                            designed with the developer experience in mind. It&apos;s simple, powerful, concise, and
+                            well designed. I&apos;m using <a href="https://ebitengine.org/">Ebitengine</a>
+                        as the game dev framework with <a href="https://ebitenui.github.io/">Ebiten UI</a>
+                    <p>
+                        Checkout the code at
+                        <a href="https://gitlab.com/johncrane/viple">https://gitlab.com/johncrane/viple</a>
+                    </p>
+                    <p>
+                        Gopher contributions welcome!
+                    </p>
+                    <ul>
+                        Levels so far:
+                        <li>Flappy bird - J, K - move up and down</li>
+                        <li>Brickout - H, L - move left and right</li>
+                        <li>Four edge Brickout - H, J, K, L</li>
+                        <li>Connect 3 - Delete lines</li>
+                        <li>Connect 3 - Visual Mode</li>
+                        <li>Connect 3 - Challenge level, use all skills</li>
+                    </ul>
+                    In progress:
+                    Snake - HJKL (replace Four Edge Brickout)
+                    </p>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+    </table>
     </div>
     <h1>Older projects</h1>
     <table>
@@ -149,7 +153,7 @@
             <td>
                 <div class="bbox">
                     <p>
-                        (im)Perfect Flood
+                        Perfect Flood
                     </p>
                     <p>
                         A flood game with a twist.
@@ -176,7 +180,8 @@
                         <a href="./lines.html">Play Here!</a>
                     </p>
                     <p>
-                        Watch a <a href="https://www.youtube.com/watch?v=Pw-HWqvULTU">video stepping though the code</a>
+                        Watch a <a href="https://www.youtube.com/watch?v=Pw-HWqvULTU">video stepping though the
+                            code</a>
                     </p>
                 </div>
             </td>
