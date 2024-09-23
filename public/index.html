@@ -3,185 +3,305 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Ĵ portfolio</title>
+    <title>johncrane.dev portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cutive Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Courier Prime&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Red Hat Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nova Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nanum Gothic Coding&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Xanh Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source Code Pro&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nova Mono&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #222222;
+            background-color: black;
+            background-image: radial-gradient(rgba(0, 120, 0, 0.60), black 120%);
+            background-attachment: fixed;
+            border-bottom: 20px solid transparent;
+            /* height: 100vh; */
             color: #11e411;
-            font-family: 'Red Hat Mono', monospace;
+            /* font-family: 'Fira Mono', monospace; */
+            /* font-family: 'VT323', monospace; */
+            font-family: 'Courier Prime', monospace;
+            font-size: 18px;
             padding: 20px;
+            text-shadow: 0 0 4px #C8C8C8;
+            /* box-shadow: 0 0 5px #C8C8C8; */
+
+            ::selection {
+                background: #0080FF;
+                text-shadow: none;
+            }
+
+            .bbox {
+                border: 1px dashed #11ee11;
+                font-family: 'VT323', monospace;
+                /* font-family: 'Nanum Gothic Coding', monospace; */
+                font-size: 18px;
+                padding: 10px;
+                margin-bottom: 20px;
+                box-shadow: 0 0 3px #C8C8C8;
+            }
+
+            a:link {
+                color: rgb(174, 216, 248);
+                text-shadow: 0 0 2px #C8C8C8;
+            }
+
+            a:visited {
+                color: rgb(154, 212, 146);
+                text-shadow: 0 0 2px #C8C8C8;
+            }
+
+            td {
+                padding-left: 20px;
+                padding-right: 20px;
+                max-width: 800px;
+            }
         }
 
-        .intro {
-            border: 1px solid #11ee11;
-            font-family: 'Courier Prime', monospace;
-            font-size: 20px;
-            padding: 10px;
-            margin-bottom: 20px;
-        }
-
-        pre {
-            font-family: 'Courier Prime', monospace;
-            font-size: 16px;
-            color: #11ee11;
-        }
-
-        a:link {
-            color: rgb(95, 184, 251);
-        }
-
-        a:visited {
-            color: rgb(154, 212, 146);
+        body::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: repeating-linear-gradient(0deg,
+                    rgba(black, 0.15),
+                    rgba(black, 0.15) 1px,
+                    transparent 1px,
+                    transparent 2px);
+            z-index: -1;
         }
     </style>
 </head>
 
 <body>
     <h1>johncrane.dev</h1>
-    <div class="intro">
+    <div class="box">
         <p>
-            Can a former programmer return to the craft after years as a manager, project manager,
+            Can a former programmer return to the craft after years as an engineering manager, project manager,
             scrum master and agile coach?
         </p>
         <p>
-            Unlikely, but I have committed to this adventure. 
+            Unlikely, but I&apos;m going to try anyway.
             Below you'll find my attempts to recapture lost glory.
         <p>
             Please enjoy.
         </p>
         <p>
-            <a href="email:john.crane.se@gmail.com">email me</a>
+            <a href="mailto:john.crane.se@gmail.com">email me</a>
         </p>
     </div>
-    <h1>My current project is Viple.</h1>
-    <div class="intro">
-        <p>
-            Learn vi by playing classic games.
-        </p>
-        <p>
-            <a href="./viple/viple_wasm.html">Play Here!</a>
-        </p>
-        <p>
-            Motivation: While some devs choose to learn vi (I'm not judging) I recently discovered that some students
-            are forced to learn vi. There are a few games available to help you learn some features of vi,
-            there's a need to teach more.
-        </p>
-        <p>
-            Technology: I wanted to learn Go and I was not disappointed. Go is designed with the developer experience in
-            mind. It's
-            simple and powerful. The ebitengine is a solid 2D game dev framework.
-        <p>
-            Checkout the code at
-            <a href="https://gitlab.com/johncrane/viple">https://gitlab.com/johncrane/viple</a>
-        </p>
-        <p>
-            Gopher contributions welcome!
-        </p>
-        <ul>
-            Levels so far:
-            <li>Flappy bird - J, K - move up and down</li>
-            <li>Brickout - H, L - move left and right</li>
-            <li>Four edge Brickout - H, J, K, L</li>
-            <li>Connect 3 - Delete lines</li>
-            <li>Connect 3 - Visual Mode</li>
-            <li>Connect 3 - Challenge level, use all skills</li>
-            <li>Connect 3 J, K - move left and right - Brickout</li>
-        </ul>
-        In progress:
-        Snake - HJKL (replace Four Edge Brickout)
-        </p>
+    <h1>Active Projects</h1>
+    <table>
+        <tr>
+            <td></td>
+            <td>
+                <div class="bbox">
+                    <p>
+                    <h2>
+                        Viple
+                    </h2>
+                    </p>
+                    Learn vi by playing classic games.
+                    </p>
+                    <p>
+                        <a href="./viple/viple_wasm.html">Play Here!</a>
+                    </p>
+                    <p>
+                        Motivation: While some devs choose to learn vi (I'm not judging) I recently discovered that some
+                        students are required to learn vi. Hopefully this game will make it easier to learn.
+                    </p>
+                    <p>
+                        Technology: I wanted to learn <a href="https:\\go.dev">Go</a> and I am not disappointed. Go is
+                            designed with the developer experience in mind. It&apos;s simple, powerful, concise, consistent, and
+                            well designed. I&apos;m using <a href="https://ebitengine.org/">Ebitengine</a>
+                        as the game dev framework with <a href="https://ebitenui.github.io/">Ebiten UI</a>
+                    <p>
+                        Checkout the code at
+                        <a href="https://gitlab.com/johncrane/viple">https://gitlab.com/johncrane/viple</a>
+                    </p>
+                    <p>
+                        Gopher contributions welcome!
+                    </p>
+                    <ul>
+                        Levels so far:
+                        <li>Flappy fish - J, K - move up and down</li>
+                        <li>Brickout - H, L - move left and right</li>
+                        <li>Snake - H, J, K, L</li>
+                        <li>Connect 3 - Delete lines</li>
+                        <li>Connect 3 - Visual Mode</li>
+                        <li>Connect 3 - Challenge level, use all skills</li>
+                    </ul>
+                    </p>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <div class="bbox">
+                    <p>
+                    <h2>
+                        Grok the Casbah
+                    </h2>
+                    </p>
+                    <p>
+                        Motivation: Why use a blog site when I can write my one?
+                    </p>
+
+                    <p>
+                        Technology: 
+                        <ul>
+                            <li><a href="https://echo.labstack.com/">Echo</a>, lightweight Go web framework.</li>
+                            <li>HTMX, lightweight Javascript library for dynamic web interfaces and server-side logic.</li>
+                        </ul>
+                    </p><p>
+                        Checkout the code at
+                        <a href="https://github.com/wearsunscreen/grok-the-casbah">https://github.com/wearsunscreen/grok-the-casbah</a>
+                    </p>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+    </table>
     </div>
-    <h1>Older projects</h1>
-    <div>
-        <pre>
-    ╔═════╤═════════════════════════════════════════════════════════════════════╗
-    ║       (im)Perfect Flood                                                   ║
-    ╟     +                                                                     ╢
-    ║       A flood game with a twist.                                          ║
-    ╟     +                                                                     ╢
-    ║   <a href="./flood/flood.html">Play Here!</a>                                                              ║
-    ║                                                                           ║
-    ╚═════╧═════════════════════════════════════════════════════════════════════╝
-            </pre>
-    </div>
-    <div>
-        <pre>
-    ╔═════╤═════════════════════════════════════════════════════════════════════╗
-    ║       Flying Lines                                                        ║
-    ╟     +                                                                     ╢
-    ║       SVG animation, functional programming and a bit of math.            ║
-    ╟     +                                                                     ╢
-    ║       <a href="./lines.html">Play Here!</a>                                                          ║
-    ╟     +                                                                     ╢
-    ║       Watch a <a href="https://www.youtube.com/watch?v=Pw-HWqvULTU">video stepping though the code</a>                              ║
-    ╚═════╧═════════════════════════════════════════════════════════════════════╝
-        </pre>
-    </div>
-    <div>
-        <pre>
-    ╔═════╤═════════════════════════════════════════════════════════════════════╗
-    ║       Sort of Quiz                                                        ║
-    ╟     +                                                                     ╢
-    ║       Do you know your state capitals?                                    ║
-    ╟     +                                                                     ╢
-    ║       <a href="./sort/sort.html">Play Here!</a>                                                          ║   
-    ╚═════╧═════════════════════════════════════════════════════════════════════╝
-        </pre>
-    </div>
-    <div>
-        <pre>
-    ╔═════╤═════════════════════════════════════════════════════════════════════╗
-    ║       Portmanteau Quiz                                                    ║
-    ╟     +                                                                     ╢
-    ║       You see it’s like a portmanteau.                                    ║
-    ║       There are two meanings packed up into one word.                     ║
-    ║                                       - Humpty Dumpty                     ║
-    ╟     +                                                                     ╢
-    ║       <a href="./portmanteau/portmanteau.html">Play Here!</a>                                                          ║
-    ╚═════╧═════════════════════════════════════════════════════════════════════╝
-        </pre>
-    </div>
-    <div>
-        <pre>
-    ╔═════╤═════════════════════════════════════════════════════════════════════╗
-    ║       Movie Quotes Quiz                                                   ║
-    ╟     +                                                                     ╢
-    ║       You played it for her. You can play it for me.                      ║
-    ║                                       - Rick Blaine                       ║
-    ╟     +                                                                     ╢
-    ║       <a href="./quotes.html">Play Here!</a>                                                          ║
-    ╚═════╧═════════════════════════════════════════════════════════════════════╝
-        </pre>
-    </div>
+    <h1>Single Page Apps</h1>
+    <table>
+        <tr>
+            <td></td>
+            <td>
+                <div class="bbox">
+                    <p>
+                        Perfect Flood
+                    </p>
+                    <p>
+                        A flood game with a twist.
+                    </p>
+                    <p>
+                        <a href="./flood/flood.html">Play Here!</a>
+
+                    </p>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <div class="bbox">
+                    <p>
+                        Year of Quiz
+                    </p>
+                    <p>
+                        A trivia game best played with a group of players because it covers many areas of knowledge.
+                    </p>
+                    <p>
+                        <a href="./yearof.html">Play Here!</a>
+
+                    </p>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <div class="bbox">
+                    <p>
+                        Flying Lines
+                    </p>
+                    <p>
+                        SVG animation, functional programming and a bit of math.
+                    </p>
+                    <p>
+                        <a href="./lines.html">Play Here!</a>
+                    </p>
+                    <p>
+                        Watch a <a href="https://www.youtube.com/watch?v=Pw-HWqvULTU">video stepping though the
+                            code</a>
+                    </p>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <div class="bbox">
+                    <p>
+                        Sort of Quiz
+                    </p>
+                    <p>
+                        Do you know your state capitals?
+                    </p>
+                    <p>
+                        <a href="./sort/sort.html">Play Here!</a>
+                    </p>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <div class="bbox">
+                    <p>
+                        Portmanteau Quiz
+                    </p>
+                    <p>
+                        You see it’s like a portmanteau.
+                        There are two meanings packed up into one word.
+                        - Humpty Dumpty
+                    </p>
+                    <p>
+                        <a href="./portmanteau/portmanteau.html">Play Here!</a>
+                    </p>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <div class="bbox">
+                    <p>
+                        Movie Quotes Quiz
+                    </p>
+                    <p>
+                        You played it for her. You can play it for me.
+                        - Rick Blaine
+                    </p>
+                    <p>
+                        <a href="./quotes.html">Play Here!</a>
+                    </p>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+    </table>
     <!-- box drawing chars https://www.unicode.org/charts/nameslist/n_2500.html
        special chars https://unicode.org/reports/tr36/special_purpose.txt
        “ĵ” (U+0135)
        “Ĵ” (U+0134)
    -->
-   <h1>Ancient History</h1>
-   <div class="intro">
+    <h1>Ancient History</h1>
+    <div class="box">
+        <p>
+            My developer career started at Sierra Online porting adventure games to Macintosh.
+            I also created games, tools, web apps, and servers for Tsunami Media, Tachyon Studios,
+            and iWin using many technologies including Assembly, C, C++, SQL, Java, and Python.
+        </p>
+    </div>
     <p>
-        My developer career started at Sierra Online porting adventure games to Macintosh. 
-        I also created games and servers for Tsunami Media, Tachyon Studios, and iWin using
-        many tools including Assembly, C, C++, Java, and Python. 
+
     </p>
-   </div>
 </body>
 
 </html>
